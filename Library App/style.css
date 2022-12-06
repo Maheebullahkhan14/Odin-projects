@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    /* font-family: 'Josefin Slab', serif; */
+}
+
+body{
+    background-color: rgb(216, 231, 216);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+
+    
+   
+}
+.Nav{
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    position: relative;
+}
+.container{
+    text-align: center;
+    margin-top: 25px;
+}
+.librarydata{
+    position: absolute;
+    text-align: center;
+    background-color: #2f3640;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 15px;
+    right: 0;
+    top: 60px;
+    color: rgba(245, 245, 245, 0.705);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1000;
+}
+.addbtn,.DeleteLocalStorage{
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Josefin Slab', serif;
+
+}
+.signbtn{
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Josefin Slab', serif;
+
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+.cover{
+    display: none;
+    background-color: #2f36409c;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+.form{
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    background-color: rgb(86, 88, 90);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10% auto;
+}
+.form h4{
+    text-align: center;
+    color: aliceblue;
+}
+.form input{
+    padding: 7px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    /* border-radius: 10px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+}
+.form input::placeholder{
+    color: rgba(255, 255, 255, 0.616);
+    font-family: 'Josefin Slab', serif;
+}
+.form label{
+    color: aliceblue;
+}
+.form .btns{
+    margin: 10px auto;
+    display: flex;
+    
+}
+
+
+.form button{
+    width: 100px;
+    padding: 5px 3px;
+    border-radius: 3px;
+    border: none;
+    margin: 0px 10px;
+    font-weight: 900;
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    cursor: pointer;
+}
+.form h4,input,label{
+    margin: 10px;
+}
+.form .completedPages{
+    position: relative;
+}
+.form i{
+    
+    position: absolute;
+    right: 0;
+    color: rgba(199, 88, 88, 0.795);
+    border: 1px solid black;
+}
+
+.bookCard{
+    display: block;
+    margin: 50px;
+    padding: 10px;
+    background-color: bisque;
+    width: 300px;
+    height: 340px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bookCard .mybook{
+    background-color: aliceblue;
+    height: 100px;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    z-index: 1px;
+}
+.bookCard .mybook p{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.bookCard .btns ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top:70px;
+    background-color: antiquewhite;
+    height: 30px;
+    align-items: center;
+}
+.bookCard .btns ul li.increment{
+    background-color: rgb(199, 165, 165);
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.bookCard .btns ul li.decrement{
+    background-color: rgb(230, 88, 88);
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+.pages h4{
+    margin: 5px 0px;
+}
+.Removebtn{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.editbtns .right{
+    background-color: rgb(177, 66, 66);
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.editbtns .left{
+    background-color: rgb(216, 108, 108);
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form .btns .Edit{
+    display: none;
+}
+
+.form .btns .Edit.active{
+    display: block;
+}
+.form .btns .add.deactive{
+    display: none;
+}
+.LibraryButton button{
+    display: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    margin: 10px 15px;
+    background-color: #2f3640;
+    color: white;
+}
+.librarydata .fa-solid{
+    display: none;
+}
+@media only screen and (max-width : 720px){
+    .librarydata{
+        left: -100%;
+       
+    }
+    .librarydata .fa-solid{
+        display: block;
+    }
+    .LibraryButton button{
+        display: block;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width : 720px){
+    .librarydata{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top : 70px;
+        z-index: 1000;
+    }
+}

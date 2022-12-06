@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="maincontainer">
+    <div class="Nav">
+        <div class="logo">
+            <h2>Library</h2>
+        </div>
+        <div class="button">
+            <button class="signbtn">Sign in</button>
+        </div>
+
+    </div>
+
+    <div class="LibraryButton">
+        <button class="Libtn">Library Data</button>
+    </div>
+
+    <div class="container">
+        <button class="addbtn">Add Book</button>
+    </div>
+
+    <div class="librarydata">
+
+        <i class="fa-solid fa-xmark"></i>
+        <h3>Library Data</h3> 
+
+        <div class="data">
+            <h3>Books</h3>
+            <p id="Book">0</p>
+        </div>
+        <div class="data">
+            <h3>Total Pages</h3>
+            <p id="Totalpages">0</p>
+        </div>
+        <div class="data">
+            <h3>Pages Read</h3>
+            <p id="PagesRead">0</p>
+        </div>
+
+
+    </div>
+
+    <div class="cover">
+    <div class="form">
+        <h4>Add New Book</h4>
+        <input type="text" placeholder="Name of Book..." class="BookName">
+        <input type="text" placeholder="Author.." class="BookAuthor">
+        <input type="Number" placeholder="TotalPages.." class="Pages">
+        <input type="text" placeholder="Language.." class="Language">
+
+        <input type="text" placeholder="CompletedPages.." class="completedPages active">
+        <div class="checkbox">
+            <label for="">Complete or not</label>
+            <select id="status">
+                <option value="volvo">Yes</option>
+                <option value="saab">No</option>
+                
+              </select>
+        </div>
+
+        <div class="btns">
+            <button class="cancel">Cancel</Button>
+            <button class="add">Add</button>
+        </div>
+    </div>
+</div>
+
+    <!-- <div class="bookCard">
+        <div class="mybook">
+            <h3>Mybook</h3>
+            <p>-Author</p>
+        </div>
+        
+
+
+        <div class="pages">
+            <h4>Number of Pages :  <span id="Pages"> 450</span></h4>
+            <h4>PagesRead: <span id="readPages">45</span></h4>
+            <h4>Language : <span id="language">English</span> </h4>
+            <h4>Status: <span id="status">complete</span></h4>
+            
+        </div>
+
+        
+        <button class ="Removebtn">Remove</button>
+           
+            
+            
+        </div>
+    </div> -->
+    <!-- <label for="input">status</label>
+    <input type="checkbox" name="input" id="checkbox"> -->
+
+    
+    
+</div>
+</body>
+<script src="app.js"></script>
+
+</html>
